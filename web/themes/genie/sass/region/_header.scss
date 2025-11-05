@@ -141,6 +141,7 @@ header{
     max-width: 110px;
     @include res(s-m-l){
       position: relative;
+      max-width: 80px;
     }
   }
   > .width-wrapper{
@@ -159,8 +160,8 @@ header{
       position: fixed;
       width: 90%;
       max-width: 480px;
-      top: 58px;
-      height: calc(100% - 58px);
+      top: 71px;
+      height: calc(100% - 71px);
       overflow: auto;
       background-color: rgba(256, 256, 256, 0.95);
       display: block;
