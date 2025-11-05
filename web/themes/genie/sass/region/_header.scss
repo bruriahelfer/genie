@@ -146,11 +146,11 @@ header{
   > .width-wrapper{
     width: 1300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .menu-wrapper{
     width: auto;
+    padding-#{$start}: 50px;
     @include res(s-m-l){
       position: fixed;
       width: 90%;
