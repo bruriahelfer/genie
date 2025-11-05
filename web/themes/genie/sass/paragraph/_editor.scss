@@ -73,3 +73,13 @@ strong{
   margin: 50px auto 0;
   text-align: justify;
 }
+
+.paragraph--type--editor{
+    h2{
+        display: flex;
+        align-items: center;
+        img{
+            margin-#{$start}: 10px;
+        }
+    }
+}
