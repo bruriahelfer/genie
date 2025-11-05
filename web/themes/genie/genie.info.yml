@@ -1,6 +1,6 @@
-name: Docit Wwebsite
+name: Genie Wwebsite
 type: theme
-description: Docit Wwebsite sub theme of Stark
+description: Genie Wwebsite sub theme of Stark
 core_version_requirement: ^8 || ^9 || ^10
 # Defines the base theme
 base theme: stark
