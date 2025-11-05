@@ -88,13 +88,13 @@ strong{
         display: inline-block;
         padding-top: 14px;
         padding-bottom: 14px;
-        padding-#{$start}: 50px;
-        padding-#{$end}: 70px;
-        background: url(/themes/genie/images/contactus.svg) no-repeat center $end 40px $purple;
+        padding-#{$start}: 70px;
+        padding-#{$end}: 40px;
+        background: url(/themes/genie/images/contactus.svg) no-repeat center $start 40px $purple;
         border-radius: 40px;
         transition: 0.5s all;
+        text-decoration: none;
         &:hover{
-            background-position: center $end 30px;
             background-color: $dark-purple;
         }
     }
