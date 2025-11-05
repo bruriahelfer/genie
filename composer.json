@@ -37,7 +37,8 @@
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.14",
         "drupal/twig_tweak": "^3.3",
-        "drupal/webform": "^6.2"
+        "drupal/webform": "^6.2",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
