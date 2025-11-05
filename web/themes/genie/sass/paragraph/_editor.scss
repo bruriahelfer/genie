@@ -82,4 +82,20 @@ strong{
             margin-#{$start}: 10px;
         }
     }
+    .button-contact a{
+        color: #fff;
+        font-size: 1.5em;
+        display: inline-block;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-#{$start}: 50px;
+        padding-#{$end}: 70px;
+        background: url(/themes/genie/images/contactus.svg) no-repeat center $end 40px $purple;
+        border-radius: 40px;
+        transition: 0.5s all;
+        &:hover{
+            background-position: center $end 30px;
+            background-color: $dark-purple;
+        }
+    }
 }
