@@ -149,6 +149,7 @@ header{
     align-items: center;
     @include res(s-m-l){
       justify-content: space-between;
+      padding: 0;
     }
   }
   .menu-wrapper{
