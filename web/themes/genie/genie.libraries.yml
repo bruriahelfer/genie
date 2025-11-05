@@ -4,7 +4,6 @@ genie_styles_ltr:
       stylesheets/genie-ltr.css: {}
 
 genie_styles_rtl:
-:
   css:
     theme:
       stylesheets/genie-rtl.css: {}
