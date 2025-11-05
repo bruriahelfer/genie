@@ -1,9 +1,10 @@
-genie:
+genie_styles_ltr:
   css:
     theme:
       stylesheets/genie-ltr.css: {}
 
-genie:
+genie_styles_rtl:
+:
   css:
     theme:
       stylesheets/genie-rtl.css: {}
