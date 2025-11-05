@@ -51,10 +51,11 @@ img{
 .field--type-text-long {
   a{
     color: $purple;
-    text-decoration: none;
+    text-decoration: underline;
   }
   .button-arrow a{
     color: #fff;
+    text-decoration: none;
   }
 }
 .only-small-mobile{

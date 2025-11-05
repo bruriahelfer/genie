@@ -98,4 +98,9 @@ strong{
             background-color: $dark-purple;
         }
     }
+    &.narrow{
+        > .content{
+            width: 1160px;
+        }
+    }
 }
