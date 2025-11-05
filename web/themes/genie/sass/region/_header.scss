@@ -147,6 +147,9 @@ header{
     width: 1300px!important;
     display: flex;
     align-items: center;
+    @include res(s-m-l){
+      justify-content: space-between;
+    }
   }
   .menu-wrapper{
     width: auto;
