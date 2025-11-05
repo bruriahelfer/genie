@@ -2,14 +2,16 @@
     h2{
         text-align: center;
         padding-bottom: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         @include res(s-m-l){
             padding-bottom: 40px;
         }
-        img{
-            margin-#{$start}: 5px;
+        .field--name-field-title-formated{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-#{$start}: 5px;
+            }
         }
     }
     .flex{
