@@ -1,7 +1,8 @@
 .paragraph--type--webform{
-    padding: 0 50px;
+    padding: 0 50px 50px;
     @include res(s-m){
         padding: 0 20px;
+        margin-bottom: 100px;
     }
     [data-drupal-messages=""]{
         display: none;
