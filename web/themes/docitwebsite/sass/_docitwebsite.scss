@@ -1,0 +1,249 @@
+@import "base/colors.scss";
+@import "base/font.scss";
+@import "base/quary.scss";
+@import "base/mixin.scss";
+@import "region/header.scss";
+@import "region/footer.scss";
+@import "paragraph/grid.scss";
+@import "paragraph/image-text.scss";
+@import "paragraph/editor.scss";
+@import "paragraph/levels.scss";
+@import "paragraph/webform.scss";
+@import "content/page.scss";
+@import "content/lp-new.scss";
+
+
+a, a:link, a:visited{
+  text-decoration: none;
+  color: $default;
+}
+
+body{
+    margin: 0;
+    color: $default;
+    line-height: 1.2;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    font-size: 16px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.layout-container{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -3px;
+}
+
+.only-mobile{
+  display: none!important;
+  @include res(s-m-l){
+    display: block!important;
+  }
+}
+
+.field--type-text-long {
+  a{
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+.only-small-mobile{
+  display: none!important;
+  @include res(s){
+    display: block!important;
+  }
+}
+
+.only-desktop{
+  @include res(s-m-l){
+    display: none!important;
+  }
+}
+
+.toolbar-tray span, .toolbar-tray a {
+  color: #565656;
+  text-decoration: none;
+  display: block;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+
+body main{
+  padding-top: 80px;
+  h1{
+    font-size: 2.5em;
+    padding: 80px 0 20px;
+    font-weight: 700;
+    color: $dark-purple;
+    @include res(xxl){
+      font-weight: 600;
+      font-size: 2.2em;
+    }
+    @include res(xl){
+      font-weight: 600;
+      font-size: 2.2em; 
+    }
+    @include res(l){
+      font-weight: 600;
+      font-size: 2.2em; 
+    }
+    @include res(s-m){
+      padding-top: 30px;
+      font-size: 1.7em;
+    }
+  }
+}
+
+#block-docitwebsite-primary-local-tasks{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  #{$end}: 0;
+  background-color:$green;
+  z-index: 200;
+  > ul{
+    display: flex;
+    margin: 0 40px;
+    li{
+      list-style: none;
+      padding: 10px;
+    }
+  }
+  a{
+      color: #fff;
+      font-size: 16px;
+  }
+  .tabs.primary{
+      margin: 0;
+      .is-active {
+          a{
+              color: $default;
+              pointer-events: none;
+          }
+      }
+      a:hover{
+          color: $default;
+      }
+  }
+}
+
+.toolbar-oriented .toolbar-bar{
+z-index: 1001;
+}
+
+[data-contextual-id^=media]{
+  display: none;
+}
+
+h2{
+  color: $dark-purple;
+  font-size: 2.5em;
+  font-weight: 600;
+  @include res(s-m-l){
+    font-size: 1.7em;
+  }
+}
+
+.centered{
+  text-align: center;
+}
+
+.purple{
+  color: $purple;
+}
+
+.dark-purple{
+  color: $dark-purple;
+}
+
+.field--name-field-paragraphs{
+  > .paragraph{
+    margin-top: 50px;
+    &.paragraph--type--webform{
+      margin-top: 10px;
+    }
+    @include res(s-m-l){
+      margin-top: 50px;
+    }
+    &.with-bg{
+      padding: 80px 0
+    }
+    > .content{
+      @include width;
+    }
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.float-contact a{
+  //background: url(/themes/docitwebsite/images/contact.svg) no-repeat top 15px center #12D178;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  position: fixed;
+  bottom: 30px;
+  #{$end}: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  color: #fff;
+  box-shadow: 1px 0px 6px rgba(0,0,0,0.3);
+  @include res(xxl){
+    bottom: 20px;
+    #{$end}: 20px;
+  }
+  @include res(xl){
+    bottom: 20px;
+    #{$end}: 20px;
+  }
+  @include res(s-m-l){
+    width: 70px;
+    height: 70px;
+    #{$end}: 10px;
+    bottom: 10px;
+    font-size: 0.9em;
+    background-size: 25px;
+  }
+  video{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    @include res(s-m-l){
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.accessibility_div_wrap{
+  font-family: 'Noto Sans Hebrew',sans-serif !important;
+  font-weight: normal;
+  > .btn_accessibility > span.accessibility_component{
+    display: none;
+  }
+  .accessibility_component{
+    font-family: 'Noto Sans Hebrew',sans-serif !important;
+    font-weight: normal;
+  }
+  .btn_accessibility{
+    width: 40px;
+    @include res(s-m-l){
+      margin-top: -10px;
+      margin-right: -17px;
+    }
+  }
+}

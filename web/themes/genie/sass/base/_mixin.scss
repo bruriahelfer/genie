@@ -1,0 +1,151 @@
+@mixin width(){
+  width: 1770px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  @include res(s-m){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.width-wrapper{
+  @include width;
+}
+
+@mixin width-narrow(){
+  width: 1575px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  @include res(s-m){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@mixin button(){
+  color: #fff;
+  font-size: 1.5em;
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-#{$start}: 50px;
+  padding-#{$end}: 70px;
+  background: url(/themes/genie/images/arrow-#{$end}-white.svg) no-repeat center $end 40px $purple;
+  border-radius: 40px;
+  transition: 0.5s all;
+  &:hover{
+    background-position: center $end 30px;
+    background-color: $dark-purple;
+  }
+}
+
+.button-arrow a, .button-arrow a:visited{
+  @include button;
+}
+
+@mixin button-white(){
+  border: 3px solid $purple;
+  color: $purple!important;
+  font-size: 1.5em;
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-#{$start}: 60px;
+  padding-#{$end}: 60px;
+  border-radius: 40px;
+  transition: 0.5s all;
+  &:hover{
+    background-color: $purple;
+    color: #fff!important;
+  }
+}
+
+.button-white a, .button-white a:visited{
+  @include button-white;
+}
+
+@mixin owl-control(){
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 100%;
+    height: 0;
+    .owl-prev, .owl-next{
+        position: absolute;
+        text-indent: -9999px;
+        width: 20px;
+        height: 30px;
+        &:before, &:after{
+            content:"";
+            width: 20px;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            #{$start}: 0;
+        }
+    }
+    .owl-prev{
+        #{$start}: 10px;
+        &:before{
+            transform: rotate(45deg);
+        }
+        &:after{
+            transform: rotate(-45deg);
+        }
+    }
+    .owl-next{
+        #{$end}: 10px;
+        &:before{
+            transform: rotate(-45deg);
+        }
+        &:after{
+            transform: rotate(45deg);
+        }
+    }
+    [dir="rtl"] & {
+      .owl-prev{
+        &:before{
+            top: 6px;
+        }
+        &:after{
+            top: 19px;
+        }
+      }
+      .owl-next{
+        &:before{
+            top: 6px;
+        }
+        &:after{
+            top: 19px;
+        }
+      }
+    }
+    [dir="ltr"] & {
+      .owl-prev{
+        &:before{
+            top: 19px;
+        }
+        &:after{
+            top: 6px;
+        }
+      }
+      .owl-next{
+        &:before{
+            top: 19px;
+        }
+        &:after{
+            top: 6px;
+        }
+      }
+    }
+}
+
+.owl-controls{
+  @include owl-control;
+}
+

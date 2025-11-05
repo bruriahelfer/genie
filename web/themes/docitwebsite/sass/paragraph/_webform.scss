@@ -1,0 +1,167 @@
+.paragraph--type--webform{
+    padding: 0 50px;
+    @include res(s-m){
+        padding: 0 20px;
+    }
+    [data-drupal-messages=""]{
+        display: none;
+    }
+    > .content{
+        display: flex;
+        box-shadow: -1px 0px 10.9px 11px rgba(0,0,0,0.05);
+        width: 1200px!important;
+        justify-content: space-between;
+        padding: 0!important;
+        @include res(s-m){
+            box-shadow: none;
+        }
+        .field--name-field-image{
+            width: 420px;
+            position: relative;
+            @include res(l){
+                width: 220px;
+            }
+            @include res(s-m){
+                display: none;
+            }
+            img{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: right top;
+            }
+        }
+        .webform-content{
+            width: calc(100% - 420px);
+            box-sizing: border-box;
+            padding: 40px 60px;
+            max-width: 680px;
+            margin: 0 auto;
+            position: relative;
+            @include res(l){
+                width: calc(100% - 220px);
+                padding: 30px 20px;
+            }
+            @include res(s-m){
+                width: 100%;
+                padding: 0;
+            }
+            .field--name-field-title{
+                font-size: 2.2em;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .field--name-field-subtitle{
+                margin-bottom: 20px;
+            }
+            .field--name-field-webform{
+                margin-top: 40px;
+            }
+        }
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .js-form-item{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            font-size: 1em;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            @include res(s-m){
+                margin-bottom: 10px;
+            }
+            .form-item--error-message{
+                font-size: 0.8em;
+                color: red;
+            }
+            &.js-form-item-name, &.js-form-item-familly-name{
+                width: 49%;
+                @include res(s-m){
+                    width: 100%;
+                }
+                input{
+                    background: url(/themes/docitwebsite/images/user.svg) no-repeat right 10px center;
+                }
+            }
+            &.js-form-item-email{
+                input{
+                    background: url(/themes/docitwebsite/images/email.svg) no-repeat right 10px center;
+                }  
+            }
+            &.js-form-item-phone{
+                input{
+                    background: url(/themes/docitwebsite/images/phone.svg) no-repeat right 10px center;
+                } 
+            }
+            @include res(s-m){
+                display: block;
+            }
+            label{
+                position: absolute;
+                color: #969696;
+                top: 24px;
+                right: 45px;
+                transition: all 0.5s;
+                @include res(s-m){
+                    top: 10px;
+                }
+            }
+            input{
+                width: 100%;
+                border: 1px solid #C3C3C3;
+                height: 65px;
+                padding: 0 45px 0 10px;
+                box-sizing: border-box;
+                transition: all 0.5s;
+                @include res(s-m){
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+            textarea{
+                width: 100%;
+                border: 1px solid #C3C3C3;
+                padding: 15px 10px;
+                box-sizing: border-box;
+                resize: none;
+                @include res(s-m){
+                    width: 100%;
+                    margin: 0;
+                    padding-top: 8px;
+                }
+            }
+            input, textarea{
+                font-family: 'Noto Sans Hebrew', sans-serif;
+            }
+            &.input-full{
+                label{
+                    font-size: 0.8em;
+                    top: 14px;
+                    @include res(s-m){
+                        font-size: 0.7em;
+                        top: 5px;
+                    }
+                }
+                input{
+                    padding-top: 16px;
+                }
+            }
+            > div{
+                width: 100%;
+            }
+        }
+        .js-form-submit{
+            @include button;
+            border: none;
+            margin-#{$start}: auto;
+            font-size: 1.1em;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}

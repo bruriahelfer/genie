@@ -1,0 +1,75 @@
+.field--name-field-editor{
+    ul{
+        margin: 20px 0;
+        padding: 0;
+        font-size:1.1em;
+        list-style: none;
+        li{
+            padding-bottom: 30px;
+            position: relative;
+            padding-#{$start}: 40px;
+            &:before{
+                #{$start}: 0;
+                content:"";
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                background: url(/themes/docitwebsite/images/vi.svg) no-repeat center center $light-green;
+                border-radius: 50%;
+            }
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+    ol {
+        counter-reset: item;
+        padding: 0;
+        padding-top: 10px;
+        line-height: 1.5;
+        ul li{
+            padding-bottom: 10px;
+            padding-#{$start}: 20px;
+            &:before{
+                background-size: 7px;
+                width: 15px;
+                height: 15px;
+                margin-top: 4px;
+            }
+        }
+        > li {
+            padding-bottom: 10px;
+            display: block;
+            padding-#{$start}: 17px;
+            &:before {
+                content: counters(item, ".") ". ";
+                counter-increment: item;
+                color: $green;
+            }
+        }
+    }
+}
+
+strong{
+    font-weight: 700;
+}
+
+.paragraph--type--editor.big-text{
+    font-size: 1.5em;
+    line-height: 1.5;
+    @include res(s-m){
+        font-size: 1em;
+    }
+    ul{
+        font-size: 0.75em;
+        @include res(s-m){
+            font-size: 1em;
+        }
+    }
+}
+
+.paragraph--type--editor{
+    max-width: 1300px;
+  margin: 50px auto 0;
+  text-align: justify;
+}

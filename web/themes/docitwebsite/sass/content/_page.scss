@@ -1,0 +1,96 @@
+article.node--type-page{
+    .width-wrapper.header{
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      display: flex;
+      .right{
+        width: 42%;
+        margin-top: 60px;
+        @include res(xl){
+          font-size: 0.8em;
+        }
+        @include res(l){
+          font-size: 0.7em;
+        }
+        @include res(s-m){
+          width: 100%;
+          margin-top: 20px;
+          font-size: 0.8em;
+        }
+        h1{
+          padding-top: 0;
+          font-size: 4em;
+          text-align: initial;
+          font-weight: 700;
+          color: $dark-purple;
+        }
+        h2{
+          font-weight: normal;
+          margin-bottom: 50px;
+          font-size: 1.2em;
+          color: $default
+        }
+        .field--name-field-link{
+          text-align: left;
+          a{
+            @include button;
+          }
+        }
+      }
+      .left{
+        width: 42%;
+        margin-top: 60px;
+        @include res(s-m){
+          width: 100%;
+        }
+      }
+    }
+    .titles{
+      padding: 0 30px;
+        h2{
+            font-weight: 500;
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.5em;
+            font-weight: 600;
+            @include res(xxl){
+              font-size: 1.1em;
+            }
+            @include res(xl){
+              font-size: 1.1em;
+            }
+            @include res(l){
+              font-size: 1.1em;
+            }
+            @include res(s-m){
+              font-size: 1em;
+            }
+        }
+      }
+    .node__content{
+      width: 100%;
+    }
+  }
+
+  /*
+  .path-frontpage{
+    .header{
+      .field--name-field-link{
+        position: relative;
+        &:after{
+          content:"";
+          background: url(/themes/docitwebsite/images/line.svg) no-repeat center center;
+          width: 1664px;
+          height: 1214px;
+          position: absolute;
+          top: 60px;
+          right: 90px;
+          z-index: -1;
+          @media (max-width:1860px){
+            display: none;
+          }
+        }
+      }
+    }
+  }*/

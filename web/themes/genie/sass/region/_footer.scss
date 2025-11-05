@@ -1,0 +1,93 @@
+footer{
+    font-size: 0.9em;
+    margin-top: 100px;
+    position: relative;
+    #block-footer-block{
+        background: url(/themes/genie/images/footer.png) no-repeat center center;
+        background-size: cover;
+        padding: 85px 100px 220px;
+        @include res(s-m){
+            padding: 85px 0px 220px;
+            font-size: 0.8em;
+        }
+        .field--name-field-editor{
+            color: #fff;
+            h2{
+                font-weight: 600;
+                color: #fff;
+            }
+            p{
+                font-size: 1.5em;
+                font-weight: 500;
+                max-width: 500px;
+            }
+        }
+    }
+    > .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 90px 90px 0px 0px;
+        background: rgba(255, 255, 255, 0.94);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 16px 150px 25px;
+        box-sizing: border-box;
+        @include res(xl){
+            padding: 16px 50px 25px;
+        }
+        @include res(s-m-l){
+            padding: 16px 50px 25px;
+        }
+        @include res(s-m){
+            display: block;
+            text-align: center;
+        }
+        .region-footer{
+            width: calc(100% - 250px);
+            @include res(s-m-l){
+                width: 100%;
+            }
+            #block-genie-kwtrtthtwnh{
+                margin-top: 20px;
+            }
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            @include res(s-m-l){
+                display: block;
+            }
+            li{
+                margin-#{$end}: 60px;
+                @include res(xl){
+                    margin-#{$end}: 40px;
+                }
+                @include res(s-m-l){
+                    margin: 0 0 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+                &::last-child{
+                    margin-#{$end}: 0;
+                }
+            }
+        }
+        .details{
+            direction: ltr;
+            font-family: 'Inter', sans-serif;
+            @include res(s-m){
+                margin-top: 30px;
+            }
+            .logo{
+                margin-bottom: 5px;
+            }
+            a{
+                margin-left: 5px;
+            }
+        }
+    }
+}

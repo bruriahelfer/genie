@@ -1,0 +1,32 @@
+genie:
+  css:
+    theme:
+      stylesheets/genie-ltr.css: {}
+
+genie:
+  css:
+    theme:
+      stylesheets/genie-rtl.css: {}
+
+base:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css: {}
+      js/owl-carousel/assets/owl.carousel.css: {}
+      //fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap: {}
+      //fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap: {}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js: {}
+    js/owl-carousel/owl.carousel.min.js: {}
+    js/basic.js: {}
+    js/genie.js: {}
+    js/owl.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/jquery.ui.effects.core
+    - core/jquery.ui.effects.slide
+    - core/jquery.ui.effects.size
+    - core/drupalSettings
