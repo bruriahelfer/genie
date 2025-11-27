@@ -165,6 +165,18 @@ header{
             display: none;
           }
         }
+        @include res(s-m-l){
+          position: fixed;
+          top: 14px;
+          color: #fff;
+          #{$start}: 94px;
+          a{
+            color: #fff!important;
+            &:after{
+              display: none;
+            }
+          }
+        }
       }
     }
   }
