@@ -22,8 +22,6 @@
                 $(this).css('transition-delay', delay + 's');
               });
                 $('.paragraph--type--grid').addClass('inview');
-              } else {
-                $('.paragraph--type--grid').removeClass('inview');
               }
             });
 
