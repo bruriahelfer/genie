@@ -16,12 +16,15 @@
             };
 
             $(window).on('resize scroll', function() {
-              if ($('.paragraph--type--grid .field--name-field-items').isInViewport()) {
-                $('.paragraph--type--grid .field--name-field-items > .field__item').each(function(index) {
+              if ($('.paragraph--type--grid.grid_3.id-1 .field--name-field-items').isInViewport()) {
+                $('.paragraph--type--grid.grid_3.id-1 .field--name-field-items > .field__item').each(function(index) {
                 var delay = 0.3 + (index * 0.2);
+                if (index % 3 === 1) {
+                  delay += 0.5;
+                }
                 $(this).css('transition-delay', delay + 's');
               });
-                $('.paragraph--type--grid').addClass('inview');
+                $('.paragraph--type--grid.grid_3.id-1').addClass('inview');
               }
             });
 
