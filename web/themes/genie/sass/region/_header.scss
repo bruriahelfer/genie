@@ -155,6 +155,9 @@ header{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include res(s-m-l){
+        display: block;
+      }
       #block-genie-lang{
         li{
           padding: 0;
@@ -167,14 +170,13 @@ header{
         }
         @include res(s-m-l){
           position: fixed;
-          top: 14px;
+          top: 27px;
           color: #fff;
           #{$start}: 94px;
           a{
-            color: #fff!important;
-            &:after{
-              display: none;
-            }
+            color: #fff;
+            padding: 0;
+            border: none;
           }
         }
       }
