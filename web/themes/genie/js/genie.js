@@ -14,11 +14,11 @@
 
               return elementBottom > viewportTop && elementTop < viewportBottom;
             };
-
+            var delay = 0.2;
             $(window).on('resize scroll', function() {
               if ($('.paragraph--type--grid.grid_3.id-1 .field--name-field-items').isInViewport()) {
                 $('.paragraph--type--grid.grid_3.id-1 .field--name-field-items > .field__item').each(function(index) {
-                var delay = 0.3 + (index * 0.2);
+                delay = 0.3 + delay;
                 if (index % 3 === 0) {
                   delay += 0.5;
                 }
