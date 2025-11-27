@@ -116,7 +116,8 @@
                 width: 100%;
                 border: 1px solid #C3C3C3;
                 height: 65px;
-                padding: 0 45px 0 10px;
+                padding-#{$start}: 45px;
+                padding-#{$end}: 10px;
                 box-sizing: border-box;
                 transition: all 0.5s;
                 @include res(s-m){
