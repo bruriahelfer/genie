@@ -196,7 +196,7 @@ header{
       display: block;
       box-sizing: border-box;
       #{$start}: -100%;
-      transition: right 0.5s;
+      transition: all 0.5s;
       padding: 50px 30px 0;
     }
     ul:not(.contextual-links){
