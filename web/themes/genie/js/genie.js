@@ -16,7 +16,7 @@
             };
 
             $(window).on('resize scroll', function() {
-              if ($('.paragraph--type--grid').isInViewport()) {
+              if ($('.paragraph--type--grid .field--name-field-items').isInViewport()) {
                 $('.paragraph--type--grid').addClass('inview');
               } else {
                 $('.paragraph--type--grid').removeClass('inview');
