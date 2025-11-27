@@ -86,17 +86,17 @@
                     width: 100%;
                 }
                 input{
-                    background: url(/themes/genie/images/user.svg) no-repeat right 10px center;
+                    background: url(/themes/genie/images/user.svg) no-repeat $start 10px center;
                 }
             }
             &.js-form-item-email{
                 input{
-                    background: url(/themes/genie/images/email.svg) no-repeat right 10px center;
+                    background: url(/themes/genie/images/email.svg) no-repeat $start 10px center;
                 }  
             }
             &.js-form-item-phone{
                 input{
-                    background: url(/themes/genie/images/phone.svg) no-repeat right 10px center;
+                    background: url(/themes/genie/images/phone.svg) no-repeat $start 10px center;
                 } 
             }
             @include res(s-m){
@@ -106,7 +106,7 @@
                 position: absolute;
                 color: #969696;
                 top: 24px;
-                right: 45px;
+                #{$start}: 45px;
                 transition: all 0.5s;
                 @include res(s-m){
                     top: 10px;
