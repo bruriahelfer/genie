@@ -16,16 +16,14 @@
             };
             $(window).on('resize scroll', function() {
               if ($('.paragraph--type--grid.grid_3.id-1 .field--name-field-items').isInViewport()) {
-                var delay = -0.2; // Reset delay here, inside the event handler
+                var delay = 0.2; // Reset delay here, inside the event handler
                 
-                $('.paragraph--type--grid.grid_3.id-1 .field--name-field-items > .field__item').each(function(index) {
-                  delay = delay + 0.3;
-                  
-                  if (index % 3 === 0) {
-                    delay += 0.3;
-                  }
-                  
+                $('.paragraph--type--grid.grid_3.id-1 .field--name-field-items > .field__item').each(function(index) {                 
                   $(this).css('transition-delay', delay + 's');
+                    delay = delay + 0.3;
+                    if (index % 3 === 0) {
+                      delay += 0.3;
+                    }
                 });
                 
                 $('.paragraph--type--grid.grid_3.id-1').addClass('inview');
