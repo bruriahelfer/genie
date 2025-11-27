@@ -6,7 +6,7 @@
     }
     .field--name-field-levels{
         @include width-narrow();
-        width: 1000px;
+        width: 1200px;
     }
     .field--name-field-levels > .field__item{
         position: relative;
@@ -63,7 +63,7 @@
                 }
                 .right, .left{
                     width: calc(50% - 50px);
-                    max-width: 320px;
+                    max-width: 420px;
                     margin-top: 16px;
                     @include res(s-m){
                         margin-top: 0;
