@@ -195,7 +195,7 @@ header{
       background-color: rgba(256, 256, 256, 0.95);
       display: block;
       box-sizing: border-box;
-      right: -100%;
+      #{$start}: -100%;
       transition: right 0.5s;
       padding: 50px 30px 0;
     }
@@ -259,7 +259,7 @@ header{
   header{
     .menu-wrapper{
       @include res(s-m-l){
-        right: 0;
+        #{$start}: 0;
       }
     }
   }
