@@ -1,8 +1,12 @@
 .paragraph--type--grid{
+    > .content{
+        width: 1880px;
+    }
     .field--name-field-title-formated{
         text-align: center;
         font-size: 2.5em;
         font-weight: 600;
+        color: $purple;
         @include res(s-m-l){
             font-size: 1.7em;
         }
@@ -21,13 +25,17 @@
     .field--name-field-items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         > .field__item{
             width: 30%;
             margin: 0 1.5%;
-            max-width: 420px;
             text-align: center;
             margin-bottom: 100px;
+            box-shadow: 0 2px 3.8px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            padding: 10px 20px 20px;
+            box-sizing: border-box;
+            max-width: 488px;
             @include res(l){
                 width: 48%;
                 margin-bottom: 50px;
@@ -55,8 +63,9 @@
             }
             .field--name-field-title{
                 font-size: 1.5em;
-                color: $purple;
+                color: $dark-purple;
                 margin-bottom: 13px;
+                font-weight: bold;
             }
             .field--name-field-content{
                 line-height: 1.5em;
@@ -99,8 +108,11 @@
         }
         .field--name-field-items{
             margin-top: 95px;
+            @include res(xl){
+                margin-top: 50px;
+            }
             @include res(s-m-l){
-                margin-top: 0;
+                margin-top: 30px;
             }
         }
     }
