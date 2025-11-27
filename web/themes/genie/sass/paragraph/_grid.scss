@@ -38,7 +38,7 @@
             max-width: 488px;
             position: relative;
             opacity: 0;
-            transform: translateY(30px); // Start 30px below
+            transform: translateY(60px); // Start 30px below
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
             @include res(l){
                 width: 48%;
