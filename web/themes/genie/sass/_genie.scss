@@ -248,8 +248,8 @@ h2{
   }
   .btn_accessibility{
     width: 40px;
-    #{$start}: 20px;
-    #{$end}: auto;
+    #{$end}: 20px;
+    #{$start}: auto;
     @include res(s-m-l){
       margin-top: 60px;
       margin-#{$start}: -17px;
