@@ -19,7 +19,7 @@
                 var delay = 0; // Reset delay here, inside the event handler
                 
                 $('.paragraph--type--grid.grid_3.id-1 .field--name-field-items > .field__item').each(function(index) {
-                  delay = delay + 0.1;
+                  delay = delay + 0.3;
                   
                   if (index % 3 === 0) {
                     delay += 0.3;
