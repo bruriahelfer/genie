@@ -18,7 +18,7 @@
             $(window).on('resize scroll', function() {
               if ($('.paragraph--type--grid .field--name-field-items').isInViewport()) {
                 $('.paragraph--type--grid .field--name-field-items > .field__item').each(function(index) {
-                var delay = 0.3 + (index * 0.5);
+                var delay = 0.1 + (index * 0.5);
                 $(this).css('transition-delay', delay + 's');
               });
                 $('.paragraph--type--grid').addClass('inview');
