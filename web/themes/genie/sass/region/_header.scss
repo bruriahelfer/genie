@@ -135,6 +135,7 @@ header{
   align-items: center;
   @include res(s-m-l){
     justify-content: space-between;
+    padding: 10px 20px;
   }
   @include res(s-m){
     padding: 13px 20px;
@@ -172,7 +173,7 @@ header{
           position: fixed;
           top: 27px;
           color: #fff;
-          #{$start}: 94px;
+          #{$start}: 60px;
           a{
             color: #fff;
             padding: 0;
