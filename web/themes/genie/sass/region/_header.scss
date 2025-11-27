@@ -127,7 +127,8 @@ header{
   transition: all 0.5s ease-out;
   z-index: 400;
   background-color: $purple;
-  padding: 10px 50px;
+  padding: 10px 70px;
+  padding-#{$start}: 50px;
   box-sizing: border-box;
   display: flex;
   color: #fff;
@@ -149,8 +150,26 @@ header{
       max-width: 80px;
     }
   }
+  .region-menu{
+    .region{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #block-genie-lang{
+        li{
+          padding: 0;
+          &.is-active{
+            display: none;
+          }
+          a:after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
   .menu-wrapper{
-    width: auto;
+    width: 100%;
     padding-#{$start}: 180px;
     @include res(s-m-l){
       position: fixed;
