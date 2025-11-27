@@ -40,6 +40,11 @@
             opacity: 0;
             transform: translateY(60px); // Start 30px below
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                &.inview{
+                opacity: 1;
+                transform: translateY(0);
+            }
+    }
             @include res(l){
                 width: 48%;
                 margin-bottom: 50px;
@@ -76,6 +81,7 @@
             }
         }
     }
+    /*
     &.inview{
         .field--name-field-items{
             > .field__item{
@@ -83,7 +89,7 @@
                 transform: translateY(0);
             }
         }
-    }
+    }*/
     &.grid_4{
         .field--name-field-items{
             > .field__item{
