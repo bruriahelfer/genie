@@ -6,7 +6,10 @@ footer{
         background: linear-gradient(to right, #5829A8, #2B64BF);
         background-size: cover;
         padding: 50px 100px 110px;
-        @include res(s-m){
+        @include res(xl){
+            padding: 50px 50px 110px;
+        }
+        @include res(s-m-l){
             font-size: 0.8em;
         }
         .paragraph--type--editor{
@@ -14,6 +17,11 @@ footer{
         }
         .field--name-field-editor{
             color: #fff;
+            .content{
+                @include res(xl){
+                    padding: 0;                
+                }
+            }
             h2{
                 font-weight: 600;
                 color: #fff;
@@ -21,6 +29,10 @@ footer{
             .flex{
                 justify-content: space-between;
                 align-items: center;
+                @include res(s-m-l){
+                    display: block;
+                    margin-bottom: 40px;
+                }
                 p{
                     font-size: 1.5em;
                     font-weight: 500;
@@ -56,7 +68,7 @@ footer{
         }
         .region-footer{
             width: calc(100% - 350px);
-            @include res(s-m-l){
+            @include res(s-m){
                 width: 100%;
             }
             #block-genie-kwtrtthtwnh{
@@ -68,7 +80,7 @@ footer{
             padding: 0;
             display: flex;
             list-style: none;
-            @include res(s-m-l){
+            @include res(s-m){
                 display: block;
             }
             li{
@@ -76,7 +88,10 @@ footer{
                 @include res(xl){
                     margin-#{$end}: 40px;
                 }
-                @include res(s-m-l){
+                @include res(l){
+                    margin-#{$end}: 20px;
+                }
+                @include res(s-m){
                     margin: 0 0 10px;
                     width: 100%;
                     text-align: center;
@@ -105,6 +120,9 @@ footer{
                 margin-top: -30px;
                 margin-left: 58px;
                 color: #5B5E65;
+                @include res(s-m){
+                    margin: 0;
+                }
             }
         }
     }
