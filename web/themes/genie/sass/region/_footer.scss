@@ -12,6 +12,9 @@ footer{
         @include res(s-m-l){
             font-size: 0.8em;
         }
+        @include res(s-m){
+            padding: 50px 0px 280px;
+        }
         .paragraph--type--editor{
             margin: 0;
         }
@@ -25,6 +28,11 @@ footer{
             h2{
                 font-weight: 600;
                 color: #fff;
+                @include res(s-m){
+                    img{
+                        width: 100px;
+                    }
+                }
             }
             .flex{
                 justify-content: space-between;
